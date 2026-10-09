@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для тебя ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <a class="brand" href="#home" data-page="home">для тебя <span>♡</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    <div class="nav-links" id="navLinks">
+      <button class="nav-link active" data-page="home">Главная</button>
+      <button class="nav-link" data-page="photos">Фотографии</button>
+      <button class="nav-link" data-page="letter">Письмо</button>
+      <button class="nav-link" data-page="colors">Настроение</button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Страница 1: Главная -->
+    <section class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="hero-content">
+          <p class="eyebrow">МАЛЕНЬКИЙ МИР ДЛЯ НАС ДВОИХ</p>
+          <h1>Ты — моё<br><em>счастье</em> ♡</h1>
+          <p class="intro">
+            Среди миллионов людей я рад, что встретил именно тебя.
+          </p>
+          <button class="primary-btn" data-go="photos">
+            Начать наше путешествие <span>↗</span>
+          </button>
+          <p class="scroll-hint">маленький подарок, сделанный с любовью</p>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">♡</div>
+      </div>
+    </section>
+
+    <!-- Страница 2: Фотографии -->
+    <section class="page" id="page-photos">
+      <div class="page-heading">
+        <p class="eyebrow">НАШИ МОМЕНТЫ</p>
+        <h1>Фотографии <em>для тебя</em></h1>
+      </div>
+
+      <div class="photo-grid" id="photoGrid">
+        <article class="photo-card">
+          <img src="photo1.jpg" alt="Наше фото 1">
+          <p>с солнышком на солнышке ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo2.jpg" alt="Наше фото 2">
+          <p>красотуля ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo_7.jpg" alt="Наше фото 7">
+          <p>любимый маникюр ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo4.jpg" alt="Наше фото 4">
+          <p>фак ю на площадке ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo_5.jpg" alt="Наше фото 5">
+          <p>без линз так хорошо ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo_6.jpg" alt="Наше фото 6">
+          <p>моя любимая прическа(у тебя) ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo3.jpg" alt="Наше фото 3">
+          <p>пипяу ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo_8.jpg" alt="Наше фото 8">
+          <p>ААА ♡</p>
+        </article>
+
+        <article class="photo-card">
+          <img src="photo_10.jpg" alt="Наше фото 10">
+          <p>Гараев ушагы ♡</p>
+        </article>
+      </div>
+
+      <div class="page-actions">
+        <button class="secondary-btn" data-go="home">← На главную</button>
+        <button class="primary-btn" data-go="letter">К письму →</button>
+      </div>
+    </section>
+
+    <!-- Страница 3: Письмо -->
+    <section class="page" id="page-letter">
+      <div class="page-heading">
+        <p class="eyebrow">ОТ СЕРДЦА К СЕРДЦУ</p>
+        <h1>Несколько слов <em>для тебя</em></h1>
+      </div>
+
+      <article class="letter-card">
+        <div class="letter-heart">♡</div>
+        <p class="letter-greeting">Моя любимая,</p>
+        <div class="letter-text">Я хочу, чтобы ты знала, насколько много ты для меня значишь.
+
+Спасибо за твою улыбку, за наши моменты и за то, что ты есть в моей жизни.
+
+Я хочу создавать с тобой ещё больше счастливых воспоминаний. И пусть этот маленький сайт напоминает тебе, как сильно ты мне дорога.</div>
+        <p class="signature">Всегда твой ♡</p>
+      </article>
+
+      <div class="page-actions">
+        <button class="secondary-btn" data-go="photos">← К фотографиям</button>
+        <button class="primary-btn" data-go="colors">Ещё кое-что →</button>
+      </div>
+    </section>
+
+    <!-- Страница 4: Финальная -->
+    <section class="page" id="page-colors">
+      <div class="page-heading">
+        <p class="eyebrow">ПОСЛЕДНЯЯ СТРАНИЦА</p>
+        <h1>Наш особенный <em>мир</em></h1>
+        <p>Самое красивое в этом подарке — история, которую ты вложишь в него.</p>
+      </div>
+
+      <div class="final-card">
+        <div class="big-heart">♡</div>
+        <h2>И это только начало…</h2>
+        <p>Пусть впереди будет ещё много моментов, которые мы захотим сохранить.</p>
+        <button class="primary-btn" data-go="home">Пройти ещё раз ↺</button>
+      </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <span>сделано с</span> <b>♥</b> <span>специально для тебя</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
